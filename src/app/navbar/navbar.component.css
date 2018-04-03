@@ -1,0 +1,14 @@
+.navbar{
+    z-index: 99;border-radius: 0 0 10px 10px;
+    color: rgb(48, 48, 48);
+}
+    .navbar-brand{
+        padding: 10px 10px;
+    }
+    .glyphicon-user{
+        color: green;
+        margin-right: 10px;
+    }
+.nav .navbar .active{
+    background-color: rgb(29, 29, 29) !important;
+}

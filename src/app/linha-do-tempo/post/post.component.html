@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+  <div class="panel-heading">{{ post.nomePessoa }} disse:
+    <div class="acoes">
+      <div class="like-container">
+          <span class="glyphicon glyphicon-heart"  (click)="curtiu(post)"></span>
+        {{ post.qtdLikes }}
+      </div>
+      <div class="share-container">
+        <span class="glyphicon glyphicon-trash" (click)="excluirPost(post.id)"></span>
+      </div>
+    </div>
+  </div>
+  <div class="panel-body">
+    {{ post.texto }}
+  </div>
+</div>

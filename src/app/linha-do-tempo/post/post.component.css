@@ -1,0 +1,48 @@
+.acoes{
+    float: right;
+}
+.like-container{
+    display: inline;
+    font-size: 18pt;
+    color: rgb(0, 92, 5);
+    margin-right: 10px;
+}
+.share-container{
+    display: inline;
+    font-size: 18pt;
+    color: rgb(0, 92, 5)
+}
+.glyphicon{
+    cursor: pointer;
+    color: rgb(0, 126, 6);
+    font-size: 18pt;
+    transition:all 300ms;
+}
+    .glyphicon-heart:hover{
+        transform: scale(1.2);
+        color: rgb(0, 185, 9);
+    }
+    .glyphicon-heart:active{
+        transform: scale(0.8);
+        color: rgb(0, 92, 5);
+        
+    }
+    .glyphicon-trash:hover{
+        transform: scale(1.2);
+        color: rgb(185, 0, 0);
+    }
+    .glyphicon-trash:active{
+        transform: scale(0.8);
+        color: rgb(92, 0, 0);
+        
+    }
+.panel{
+    border-radius:  10px 10px 10px 10px;
+}
+.panel-heading{
+    font-size: 18pt;
+    background-color: rgba(9, 255, 0, 0.356);
+}
+.panel-body{
+    background-color: rgba(177, 255, 174, 0.356)
+}

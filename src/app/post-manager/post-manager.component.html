@@ -1,0 +1,11 @@
+<div class="container container-fluid">
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Seu nome</span>
+    <input [(ngModel)]="nome" type="text" class="form-control" placeholder="Digite seu nome aqui" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon2">Texto do post</span>
+    <input [(ngModel)]="texto" type="text" class="form-control" placeholder="Digite o texto aqui" aria-describedby="basic-addon2">
+  </div>
+  <button type="button" class="btn btn-default btn-success" (click)="adicionarPost()">Criar Post</button>
+</div>
