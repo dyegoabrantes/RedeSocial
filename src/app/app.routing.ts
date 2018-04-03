@@ -3,7 +3,7 @@ import { LinhaDoTempoComponent } from 'app/linha-do-tempo/linha-do-tempo.compone
 import { PostManagerComponent } from 'app/post-manager/post-manager.component';
 
 const app_routes:Routes = [
-  { path: '**', component: LinhaDoTempoComponent },
+  { path: '', component: LinhaDoTempoComponent },
   { path: 'postar', component: PostManagerComponent}
 ]
 
