@@ -5,12 +5,17 @@
           <span class="glyphicon glyphicon-heart"  (click)="curtiu(post)"></span>
         {{ post.qtdLikes }}
       </div>
+      <div class="edit-container">
+        <span class="glyphicon glyphicon-pencil" (click)="editarPost(post)"></span>
+      </div>
       <div class="share-container">
         <span class="glyphicon glyphicon-trash" (click)="excluirPost(post.id)"></span>
       </div>
     </div>
   </div>
   <div class="panel-body">
-    {{ post.texto }}
+    <p id="texto" [class.editando]="editavel" [attr.contenteditable]="editavel ? '': null" >{{ post.texto }}</p>
+    <button *ngIf="editavel" class="btn btn-primary" type="button" (click)="salvarAlteracoes(post)" >Salvar alterações</button>
+    <button *ngIf="editavel" class="btn btn-danger" type="button" (click)="cancelar()" >Cancelar</button>
   </div>
 </div>

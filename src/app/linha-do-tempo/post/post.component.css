@@ -1,16 +1,11 @@
 .acoes{
     float: right;
 }
-.like-container{
+.like-container, .share-container, .edit-container{
     display: inline;
     font-size: 18pt;
     color: rgb(0, 92, 5);
     margin-right: 10px;
-}
-.share-container{
-    display: inline;
-    font-size: 18pt;
-    color: rgb(0, 92, 5)
 }
 .glyphicon{
     cursor: pointer;
@@ -26,6 +21,14 @@
         transform: scale(0.8);
         color: rgb(0, 92, 5);
         
+    }
+    .glyphicon-pencil:hover{
+        transform: scale(1.2);
+        color: rgb(23, 116, 4);
+    }
+    .glyphicon-pencil:active{
+        transform: scale(1.2);
+        color: rgb(33, 167, 6);
     }
     .glyphicon-trash:hover{
         transform: scale(1.2);
@@ -45,4 +48,11 @@
 }
 .panel-body{
     background-color: rgba(177, 255, 174, 0.356)
+}
+
+.editando{
+    padding: 20px;
+    font-size: 20pt;
+    color: rgb(37, 37, 37);
+    background-color: rgb(129, 212, 134)
 }
